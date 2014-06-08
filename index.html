@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="CSS/styles.css"/>
+    <script>
+        document.addEventListener('DOMContentLoaded',function(){
+            console.log('Document has been loaded...');
+
+            var str='Hamid';
+            var splits=str.split('');
+            console.log('======= charCodeAt ======')
+            for (var i=0;i<str.length;i++){
+                console.log(splits[i].charCodeAt());
+            }
+            console.log('======= fromCharCode ======')
+            console.log('String.fromCharCode(104,97,109,105,100) => '+String.fromCharCode(104,97,109,105,100));
+
+            console.log('======= concat ======')
+            var str1="Hello ";
+            console.log('Concat Hello and Hamid => '+str1.concat(str));
+
+            console.log('======= indexOf ======')
+            console.log('mi in Hamid  => '+str.indexOf('mi'));
+
+            console.log('======= lastIndexOf ======')
+            str2='Hamid Hoseini';
+            console.log('H in Hamid Hoseini => '+str2.lastIndexOf('H'));
+
+            console.log('======= search ======')
+            console.log('Is the K in Hamid => '+str2.search('K'));
+
+            console.log('======= substr ======')
+            console.log('Hamid Hoseini  substr(2,3) => '+str2.substr(2,3));
+            console.log('Hamid Hoseini  substr(1) => '+str2.substr(1));
+            console.log('Hamid Hoseini  substr(-3) => '+str2.substr(-3));
+
+            console.log('======= trim ======')
+            str3='   Hamid   '
+            console.log('trim of   Hamid   => '+str3.trim());
+        });
+    </script>
+</head>
+<body>
+<h1> Exercise for String prototype methods</h1>
+</body>
+</html>
